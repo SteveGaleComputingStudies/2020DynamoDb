@@ -8,7 +8,7 @@ def query_and_project_rooms(roomName, date_range, dynamodb=None):
         dynamodb = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")
 
     table = dynamodb.Table('RoomDataTable')
-    print(f"Get room, date, Temperature")
+    print(f"Get date, room Temperature")
 
     # Expression attribute names can only reference items in the projection expression.
     response = table.query(

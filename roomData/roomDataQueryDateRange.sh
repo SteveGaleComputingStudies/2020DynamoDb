@@ -3,10 +3,10 @@
 # Room - HASH
 # SampleDateTime - RANGE
 aws dynamodb query \
-    --table-name UserOrdersTable \
+    --table-name RoomDataTable \
     --key-condition-expression "Room = :room AND SampleDateTimeId BETWEEN :startdate AND :enddate" \
     --expression-attribute-values '{
-        ":username": { "S": "E223" },
+        ":room": { "S": "E223" },
         ":startdate": { "S": "20170101" },
         ":enddate": { "S": "20180101" }
     }' \
