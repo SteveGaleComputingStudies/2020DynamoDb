@@ -27,5 +27,5 @@ if __name__ == '__main__':
           f"{query_range[0]} to {query_range[1]}")
     rooms = query_and_project_rooms(query_room, query_range)
     for room in rooms:
-        print(f"\n{room['SampleDateTimeId']} : {room['Room']}")
-        pprint(room['Temperature'])
+        print(f"\n{room['SampleDateTimeId']} : {room['Room']} : {room['Temperature']} degC")
+#       pprint(room['Temperature'])
