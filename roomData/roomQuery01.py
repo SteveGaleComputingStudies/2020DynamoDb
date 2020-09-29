@@ -15,7 +15,7 @@ def query_rooms(room, dynamodb=None):
 
 
 if __name__ == '__main__':
-    query_room = "E223"
+    query_room = "E208"
     print(f"Temps from room {query_room}")
     rooms = query_rooms(query_room)
     for room in rooms:
